@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <script src="task.js" > </script>
+    <style>
+        body {
+            font-family: monospace;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .addtask {
+            padding: 5px 10px;
+            background-color: d4edda;
+        }
+        .item {
+            padding: 5px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .completed {
+            text-decoration: line-through;
+            background-color: #d4edda;
+        }
+        .completetask {
+            background-color: #d4edda;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; background-color: #d4edda; color: black; padding: 20px; font-family: monospace;"> <i>To-Do List </i></h1>
+    <div style="text-align: center;">
+        <input type="text" id="taskinput" placeholder="Enter a new Task !">
+        <button id="add" onclick="addTask()">Add Task</button>
+    </div>
+    <div id="pendingtasks">
+        <h2 style="text-align: center;font-family: monospace;"> <b>Pending Tasks</h2></b>
+        <ul id="pendinglist"></ul>
+    </div>
+    <div id="completetasks">
+        <h2 style="text-align: center;font-family: monospace;">Completed Tasks</h2>
+        <ul id="completed"></ul>
+    </div>
+</body>
+</html> 
